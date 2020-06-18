@@ -124,7 +124,7 @@ class Student
      SELECT *
      FROM students
      WHERE grade = X
-     ORDER BY id 
+     ORDER BY id
      SQL
      DB[:conn].execute(sql).collect do |row|
        self.new_from_db(row)
