@@ -93,7 +93,7 @@ class Student
  end
  end
 
- def self.first_X_students_in_grade_10(x).all?
+ def self.first_X_students_in_grade_10(x)clear
      sql = <<-SQL
         SELECT *
         FROM students
@@ -102,6 +102,7 @@ class Student
      SQL
 
     DB[:conn].execute(sql, x)
+    bindin.binding.pry
    end
 
 
