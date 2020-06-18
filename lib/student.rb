@@ -93,7 +93,7 @@ class Student
  end
  end
 
- def self.first_X_students_in_grade_10(x).all?
+ def self.all?
      sql = <<-SQL
         SELECT * FROM students WHERE grade = 10 LIMIT ?
      SQL
